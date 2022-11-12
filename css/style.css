@@ -1,0 +1,55 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.game-area {
+    display: grid;
+    grid-auto-rows: 1fr;
+   /*  grid-auto-columns: 1fr; */
+    grid-template-areas: 
+    'player0 stuff player1'
+    ;
+    height: 60%;
+    width:60%;
+    margin-bottom: 5vh;
+}
+
+.player-0-panel {
+    grid-area: player0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.player-1-panel {
+    grid-area: player1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.player-current-box {
+    margin-top: 20vh;
+}
+
+.player-stuff {
+    grid-area: stuff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dice {
+    height: 150px;
+    width: 150px;
+    border: 0.5px solid lightgray;
+}
+
+.mark-player {
+    background-color: rgb(215, 149, 149);
+}
+
